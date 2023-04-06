@@ -15,7 +15,7 @@
     C:\Temp\IntuneWinAppUtil.exe -c "C:\Temp\ACKInstallUserNL" -s Invoke-ACKInstallUserNL.ps1 -o C:\Temp -q
 
     Install Command: 
-    C:\Windows\SysNative\WindowsPowerShell\v1.0\Powershell.exe -ExecutionPolicy Bypass -File .\Invoke-ACKInstallUserNL.ps1 -Install -NL
+    C:\Windows\SysNative\WindowsPowerShell\v1.0\Powershell.exe -ExecutionPolicy Bypass -File .\Invoke-ACKInstallUserNL.ps1 -Install
     
     Uninstall Command:
     C:\Windows\SysNative\WindowsPowerShell\v1.0\Powershell.exe -ExecutionPolicy Bypass -File .\Invoke-ACKInstallUserNL.ps1 -Uninstall
@@ -49,13 +49,7 @@
     Mandatory = $false,
     ParameterSetName = 'Uninstall'
     )]
-    [switch]$Uninstall,
-
-    [Parameter(
-    Mandatory = $false,
-    ParameterSetName = 'Install'
-    )]
-    [switch]$NL
+    [switch]$Uninstall
  )
 
  Function Add-Detection() {
