@@ -100,7 +100,6 @@ Write-Output "[Start] $(Get-Date -Format "dd/MM HH:mm")"
 Add-Detection -errorlevel 55
 
 If($Install){
-    if($NL){
         try{
         Write-Output "[Info] $(Get-Date -Format "dd/MM HH:mm") Install started"
         $OldList = Get-WinUserLanguageList
@@ -123,7 +122,6 @@ If($Install){
         Write-Output "[Error] $(Get-Date -Format "dd/MM HH:mm") Install NL failed"
         $exitstatus=1
         }
-    }
 }
 
 If($Uninstall){
