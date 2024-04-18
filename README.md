@@ -1,4 +1,4 @@
-# Autopilot Deployment Toolkit Scripts
+# Autopilot Deployment Toolkit
     
     Create Win32App
     C:\IntuneApp\IntuneWinAppUtil.exe -c "C:\IntuneApp\ADTDevice" -s Invoke-ADTDevice.ps1 -o C:\IntuneApp -q
